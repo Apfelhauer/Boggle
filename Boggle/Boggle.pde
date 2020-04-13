@@ -18,7 +18,7 @@ StringList finalWords  = new StringList();
 void setup() {
   size(1400, 760);
   frameRate(2);
-  datenbank = loadStrings("DatenbankOhneVoc.txt"); 
+  datenbank = loadStrings("Datenban.txt"); 
   usefulWords.append(datenbank);
 
 
