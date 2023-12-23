@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 class Suchalgorithmus {
   private String spielfeld;
   private int line_length; //Gibt Anzahl Buchstaben/Linie an bei 16-Buch-Feld: line_length = 4;
@@ -13,6 +15,18 @@ class Suchalgorithmus {
   }
   
   public void setFeld(char[][] f) { //Erstellt den String Feld aus einem gegeben Buchstaben-Array
+    String new_feld = "";
+    int intern_length = line_length + 2; //Außen kommen jeweils die * dazu, da zwei Seiten -> +2
+    String line_of_stars = "";
+    for(int i = 0; i < intern_length; i++) line_of_stars += "*"; //String of stars
+    new_feld += line_of_stars;
+    new_feld += "**";
+    for(char[] line_of_chars : f) {
+      new_feld += Arrays.toString(line_of_chars);
+      new_feld += "**";
+    }
+    new_feld += line_of_stars;
+    spielfeld = new_feld;
   }
   
   public void set_line_length(int ll) { //Setter für line_length
