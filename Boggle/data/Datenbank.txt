@@ -1,4 +1,4 @@
-				anzahl
+	anzahl
 	abs
 	abyan
 	ad
@@ -9,27 +9,16 @@
 	bis
 	district
 	haddscha
-	herkunfts
-	kornschaeler
-	lahidsch
-	maeher
-	mokka
-	muthalith
-	sanaa
-	sanaa	gebaeude
-	sanaa	wohnhaus
-	schabwa
-	shara
-	ta
-	verletzte
-	weber
-	yarīm
-	zabid
-	zugesichert
-	zwirnspinner
-	ʿamrān	
-"muhamasheen"
-abandoned
+herkunfts
+kornschaeler
+maeher
+mokka	
+gebaeude	
+wohnhaus
+verletzte
+weber
+zugesichert
+zwirnspinner
 abarten
 abbate
 abc
@@ -3245,7 +3234,6 @@ dashboard
 dasjenige
 dass
 dasselbe
-datase
 dated
 datei
 daten
@@ -3265,9 +3253,6 @@ david
 davon
 davongehen
 davor
-dawber
-day
-days
 dazu
 dazubringen
 dazumal

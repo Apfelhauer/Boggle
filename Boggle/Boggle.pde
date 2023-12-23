@@ -42,7 +42,7 @@ void draw() {
 
 void findPosWords() {
   possibleWords = usefulWords;
-  //Erstellt Liste aller Buchstaben auf dem Feld
+  //Erstellt String aller Buchstaben auf dem Feld
   StringList Char = new StringList();
   for (int j = 1; j < 5; j++) {
     for (int k = 1; k < 5; k++) {
