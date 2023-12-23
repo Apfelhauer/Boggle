@@ -13,12 +13,13 @@ int index;
 StringList usefulWords = new StringList();
 StringList possibleWords  = new StringList();
 StringList finalWords  = new StringList();
+Suchalgorithmus s = new Suchalgorithmus();
 
 
 void setup() {
   size(1400, 760);
   frameRate(2);
-  datenbank = loadStrings("Datenban.txt"); 
+  datenbank = loadStrings("Datenbank2.0.txt"); 
   usefulWords.append(datenbank);
 
 
@@ -32,6 +33,7 @@ void setup() {
   //checkWord("haus");
 
   drawFinalWords();
+  printArray(s.get_accessible_chars(7));
 }
 
 void draw() {
