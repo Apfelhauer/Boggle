@@ -10,9 +10,6 @@ class Suchalgorithmus {
     spielfeld = "*****haus**dest**dhgn**gain*****";  // Ein Beispiel-Feld, damit Suche nicht abstürzt.
   }
   
-  public void setFeld(String f) { //Setter für Feld || TODO: Checken ob richtiges Format
-    spielfeld = f;
-  }
   
   public void setFeld(char[][] f) { //Erstellt den String Feld aus einem gegeben Buchstaben-Array
     String new_feld = "";
@@ -23,6 +20,23 @@ class Suchalgorithmus {
     new_feld += "**";
     for(char[] line_of_chars : f) {
       String line = new String(line_of_chars);
+      new_feld += line;
+      new_feld += "**";
+    }
+    new_feld += line_of_stars;
+    spielfeld = new_feld;
+  }
+  
+  public void setFeld(String f) { //Erstellt den String Feld aus einem gegeben String mit dem Feld ohne Sternchen
+    if(!(f.length()%line_length == 0)) return;
+    String new_feld = "";
+    int intern_length = line_length + 2; //Außen kommen jeweils die * dazu, da zwei Seiten -> +2
+    String line_of_stars = "";
+    for(int i = 0; i < intern_length-1; i++) line_of_stars += "*"; //String of stars
+    new_feld += line_of_stars;
+    new_feld += "**";
+    for(int i = 0; i < line_length*line_length; i += line_length) {
+      String line = f.substring(i, i+line_length);
       new_feld += line;
       new_feld += "**";
     }

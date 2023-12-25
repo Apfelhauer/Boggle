@@ -9,6 +9,7 @@ String[] datenbank;
 int index;
 StringList all_words = new StringList();
 Suchalgorithmus suchi;
+Spielfeld spielfeld;
 
 
 void setup() {
@@ -17,8 +18,11 @@ void setup() {
   datenbank = loadStrings("Datenbank2.0.txt"); 
   all_words.append(datenbank);
   suchi = new Suchalgorithmus();
-  suchi.setFeld(buchstaben);
+  suchi.setFeld("ttuunalbsrohpdor");
+  spielfeld = new Spielfeld();
+  spielfeld.print_alle_wuerfel();
   
+
   StringList gefunden = new StringList();
   for(String wort : all_words) if(suchi.search_word(wort)) gefunden.append(wort);
   printArray(gefunden);
