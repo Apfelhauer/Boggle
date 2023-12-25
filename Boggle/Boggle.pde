@@ -1,11 +1,8 @@
 char[][] buchstaben = new char[][] {
-  {'*', '*', '*', '*', '*', '*'}, 
-  {'*', 'h', 'a', 'u', 's', '*'}, 
-  {'*', 'd', 'e', 's', 't', '*'}, 
-  {'*', 'd', 'h', 'g', 'n', '*'}, 
-  {'*', 'g', 'a', 'i', 'n', '*'}, 
-  {'*', '*', '*', '*', '*', '*'}
-};
+  {'h', 'a', 'u', 's'}, 
+  {'d', 'e', 's', 't'}, 
+  {'d', 'h', 'g', 'n'}, 
+  {'g', 'a', 'i', 'n'}};
 
 
 String[] datenbank;
@@ -20,6 +17,7 @@ void setup() {
   datenbank = loadStrings("Datenbank2.0.txt"); 
   all_words.append(datenbank);
   suchi = new Suchalgorithmus();
+  suchi.setFeld(buchstaben);
   
   StringList gefunden = new StringList();
   for(String wort : all_words) if(suchi.search_word(wort)) gefunden.append(wort);

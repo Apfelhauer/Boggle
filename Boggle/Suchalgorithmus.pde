@@ -22,7 +22,8 @@ class Suchalgorithmus {
     new_feld += line_of_stars;
     new_feld += "**";
     for(char[] line_of_chars : f) {
-      new_feld += Arrays.toString(line_of_chars);
+      String line = new String(line_of_chars);
+      new_feld += line;
       new_feld += "**";
     }
     new_feld += line_of_stars;
