@@ -44,8 +44,8 @@ class Suchalgorithmus {
     for(int index : indexes_anBuchstabe) {
       String search_field = String.valueOf(spielfeld); //String, der das Feld mit allen unbenutzten Buchstaben speichert
       search_field = replace(search_field, index, '*'); // Replaces index mit *
-      word = word.substring(1, word.length());
-      if(search_teilword(word, index, search_field)) return true;
+      String next_teilword = word.substring(1, word.length());
+      if(search_teilword(next_teilword, index, search_field)) return true;
     }
     return false;
   }

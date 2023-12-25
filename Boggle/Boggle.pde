@@ -1,8 +1,8 @@
 char[][] buchstaben = new char[][] {
-  {'h', 'a', 'u', 's'}, 
-  {'d', 'e', 's', 't'}, 
-  {'d', 'h', 'g', 'n'}, 
-  {'g', 'a', 'i', 'n'}};
+  {'o', 'g', 't', 'r'}, 
+  {'h', 'd', 'q', 'c'}, 
+  {'s', 'e', 'k', 'e'}, 
+  {'s', 't', 'u', 'n'}};
 
 
 String[] datenbank;
